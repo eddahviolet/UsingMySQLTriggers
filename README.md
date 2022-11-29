@@ -15,3 +15,32 @@ The notification message should be in the following format: A SellPrice less tha
 After creating the trigger I try to insert a new product "bushes" with a sellPrice that is less that the BuyPrice
 
 ![Inserting new record](https://user-images.githubusercontent.com/106580846/204530861-877294b1-80ed-4f9e-af6f-68f3ee96d4d7.jpg)
+
+The trigger will create the below notification in the Notifications Table
+
+![notification table](https://user-images.githubusercontent.com/106580846/204531281-5ee73c12-ba14-4d74-ad76-289c713684b5.jpg)
+
+Task 2
+
+Create an UPDATE trigger called ProductSellPriceUpdateCheck that will check that products are not updated with a SellPrice that is less than or equal to the BuyPrice. If this occurs, add a notification to the Notifications table. 
+
+The notification message should be in the following format: ProductID + was updated with a SellPrice of  + SellPrice + which is the same or less than the BuyPrice
+
+The trigger
+
+![create trigger productsellpriceupdatecheck](https://user-images.githubusercontent.com/106580846/204531840-27a5c70d-84e3-4ecc-963e-f603357e2fb8.jpg)
+
+After creating the trigger I try to update a product with the ProductID of "P6" with a sellPrice that is less that the BuyPrice
+
+![update P6](https://user-images.githubusercontent.com/106580846/204532288-ed64516f-6270-4cef-aca2-fa0e8653930e.jpg)
+
+The trigger will create the below notification in the Notifications Table
+
+![notification 2](https://user-images.githubusercontent.com/106580846/204532538-3006b5f1-d642-41f8-97c8-13f3e77ff049.jpg)
+
+Task 3
+
+Create a DELETE trigger called NotifyProductDelete that inserts a notification in the Notifications table.
+
+The notification message should be in the following format: The product with a ProductID  + ProductID + was deleted
+
