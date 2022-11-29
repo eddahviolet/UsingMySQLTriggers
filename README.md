@@ -26,7 +26,6 @@ The trigger will create the below notification in the Notifications Table
 Task 2
 
 Create an UPDATE trigger called ProductSellPriceUpdateCheck that will check that products are not updated with a SellPrice that is less than or equal to the BuyPrice. If this occurs, add a notification to the Notifications table. 
-
 The notification message should be in the following format: ProductID + was updated with a SellPrice of  + SellPrice + which is the same or less than the BuyPrice
 
 The trigger
@@ -50,3 +49,9 @@ The notification message should be in the following format: The product with a P
 The trigger
 
 ![delete trigger](https://user-images.githubusercontent.com/106580846/204535086-57fe979c-d6c0-4e84-896f-bbb64a3f2cc7.jpg)
+
+However when I try to delete a record with ProductID "P6" it doesn't delete it, below is teh output i get, I have seen on online forums they suggest I drop the trigger which beats the purpose of the exercise in the first place
+
+![trigger delete](https://user-images.githubusercontent.com/106580846/204536740-4d73644b-2b10-4889-bf55-4eb9286312c8.png)
+
+
