@@ -5,6 +5,9 @@ We need to implement triggers on the Products table below for Inserting, Updatin
 
 ![Products table](https://user-images.githubusercontent.com/106580846/204528390-01a95247-4421-4d7a-80cd-1581fa4e1640.jpg)
 
+This is adescription of the Notifications table
+
+
 Task 1
 
 Create an INSERT trigger called ProductSellPriceInsertCheck to check if the SellPrice of the product is less than the BuyPrice after a new product is inserted in the Products table. If this occurs, then a notification must be added to the Notifications table to inform the sales department. 
@@ -44,3 +47,6 @@ Create a DELETE trigger called NotifyProductDelete that inserts a notification i
 
 The notification message should be in the following format: The product with a ProductID  + ProductID + was deleted
 
+The trigger
+
+![delete trigger](https://user-images.githubusercontent.com/106580846/204535086-57fe979c-d6c0-4e84-896f-bbb64a3f2cc7.jpg)
