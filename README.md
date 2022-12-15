@@ -1,7 +1,7 @@
 # UsingMySQLTriggers
 Creating before and after triggers in MySQL with instructions to insert specific notifications to a notification table.
 
-We need to implement triggers on the Products table below for Inserting, Updating and deleting any product data on the database. Create a notification table where all the update, insert and  delete actions will be recorded
+We need to implement triggers on the Products table below for Inserting, Updating and deleting any product data on the database. Defining the trigger name and type, and specifying the logic of a trigger by enclosing multiple statements with a BEGIN, END block. Then create a notification table where all the update, insert and  delete actions will be recorded
 
 ![Products table](https://user-images.githubusercontent.com/106580846/204528390-01a95247-4421-4d7a-80cd-1581fa4e1640.jpg)
 
